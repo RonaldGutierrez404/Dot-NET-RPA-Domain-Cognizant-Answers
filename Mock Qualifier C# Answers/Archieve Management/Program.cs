@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
  
-namespace ArchieveManagement
+namespace ArchiveManagement
 {
     public class Program
     {
@@ -51,7 +51,7 @@ namespace ArchieveManagement
  
         public List<string> FindBooksNameWithSameDayReturn()
         {
-            List<string> list = new List<string>(); 
+            List<string> list = new List<string>();
             foreach(Book b in bookDetails.Values)
             {
                 if (b.IssueDate == b.ReturnDate)
