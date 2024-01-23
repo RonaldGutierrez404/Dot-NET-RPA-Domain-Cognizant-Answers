@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
  
-namespace ArchieveManagement
+namespace ArchiveManagement
 {
     public class Book
     {
@@ -15,6 +15,10 @@ namespace ArchieveManagement
         public string ReturnDate { get; set; }
  
         public double Penalty {  get; set; }
+ 
+        public Book()
+        {
+        }
  
         public Book(string memberID, string name, string genre, string issueDate, string returnDate, double penalty)
         {
