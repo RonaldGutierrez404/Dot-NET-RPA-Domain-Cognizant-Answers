@@ -8,7 +8,7 @@
 select
     c.customer_id,c.customer_name,
     coalesce(c.address, cast (c.phone_no as char), 'Not Available') as "Contact_Info",
-r.fare_amount
+    r.fare_amount
 from customers c join rentals r
 on c.customer_id=r.customer_id
 where c.email_id like '%@gmail%'
