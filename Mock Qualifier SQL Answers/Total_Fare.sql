@@ -5,8 +5,10 @@
  
 -- Sort the records based on the Total_Fare in ascending order. 
 
-select c.car_name, sum(r.fare_amount) as "Total_Fare" from cars c join rentals r
+select c.car_name, sum(r.fare_amount) as "Total_Fare" 
+from cars c join rentals r
 on c.car_id=r.car_id
-where month(r.pickup_date)=month(r.return_date) group by c.car_name
+where month(r.pickup_date)=month(r.return_date) 
+group by c.car_name
 having sum(r.fare_amount) <20000
 order by Total_Fare asc;
