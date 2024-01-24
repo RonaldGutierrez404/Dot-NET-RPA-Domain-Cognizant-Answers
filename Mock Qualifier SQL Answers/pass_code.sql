@@ -8,5 +8,5 @@ select
     c.address,
     concat(substring(c.customer_id,1,3), substring(c.email_id,1,3)) as "pass_code"
 from customers c
-where c.email_id like '%gamil%'
-order by c.customer id desc;
+where c.email_id like '%gmail%'
+order by c.customer_id desc;
